@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: cambira;
+}
+
+@font-face {
+	font-family: panther;
+	src: url(fonts/Panther_0.ttf);
+}
+
+.registration-page{
+	height: 100%;
+	width: 100%;
+	background-image: url(images/back1-01.svg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.form{
+	height: 480px;
+	width: 360px;
+	position: relative;
+	margin: 6% auto;
+	background: #ffffff;
+	border-radius: 10px;
+	box-shadow: black;
+	padding: 5px;
+	overflow: hidden;
+}
+
+/*.form{
+	height: 500px;
+	width: 300px;
+	padding-left: 50px;
+	padding-top: 80px;
+	position: relative;
+	background-position: center;
+	background-image: url(Asset2.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}*/
+
+.slider{
+	width: 220px;
+	margin: 30px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #f74ccc25;
+	border-radius: 30px;
+}
+
+.toggle-sldr{
+	padding: 10px 25px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+}
+
+#sldr{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #ff1ac6, #ac39ac);
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.register-form{
+	top: 100px;
+	position: absolute;
+	width: 280px;
+	margin: 0 30px;
+	transition: .5s;
+}
+
+.textbox{
+	width: 230px;
+	padding: 10px 0;
+	margin: 5px 25px;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.drpdnlabel{
+	font-family: cambira;
+}
+
+.container{
+	width: 230px;
+	height: 40px;
+	margin: 5px 25px;
+	padding: 0;
+}
+
+.gndr{
+	position: relative;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 10px 0;
+	width: 160px;
+	height: 40px;
+
+}
+
+.agecls{
+	position: relative;
+	padding: 10px 0;
+	width: 70px;
+	margin: 5px 0;
+	align: center;
+	float: right;
+	height: 40px;
+}
+
+.submit{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 10px auto;
+	background: linear-gradient(90deg, rgba(228,26,231,1) 19%, rgba(178,55,240,1) 100%);
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.submit-btn{
+	color: white;
+}
+
+#signup{
+	left: 0px;
+}
+
+#login{
+	left: 400px;
+}

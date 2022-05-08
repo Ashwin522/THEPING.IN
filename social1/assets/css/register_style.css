@@ -1,0 +1,193 @@
+@font-face {
+    font-family:'panther';
+    src:url('../fonts/Panther_0.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: comfortaa;
+}
+
+
+
+
+
+form {
+
+    text-align:center;
+}
+
+.bgm{
+    transform: translate(-50%, -55%);
+    top: 45%;
+    left: 50%;
+    position: absolute;
+    max-height:13cm;
+    max-width:13cm;
+    width: 80%;
+    height: 80%;
+}
+
+.wrapper {
+    
+    /*background-size:100%;*/
+    width: 100%;
+    height:100%;
+    min-width:950px;
+    background-size: cover;
+    position: absolute;
+    /*background :linear-gradient(135deg, #ff00cc, #333399); (org)*/
+    /*background: linear-gradient(135deg, #fc5c7d, #6a82fb);*/
+    /*background: linear-gradient(45deg, #3494e6, #ec6ead);*/
+    /*background: linear-gradient(135deg, #fc466b, #3f5efb);*/
+    background :linear-gradient(135deg, black, #333399);
+    overflow: hidden;
+
+}
+.login_box {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    top: 7%;
+    width: 35%;
+    opacity: 0.96;
+    background: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    padding: 5px;
+    overflow: hidden;
+    z-index: 9;
+    opacity: .95;
+
+}
+.login_header {
+    font-family: panther;
+    width: auto;
+    opacity: 110%;
+    height:90px;
+    background-image: linear-gradient(to right, #08CDE2 0%, #05565F 100%);
+    color:#fff;
+    text-align:center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 3%;
+}
+.login_header h1 {
+    
+
+    margin-top:0;
+    margin-bottom:0;
+    color: #ffffff;
+    /*text-shadow:#000 .5px .5px 0px;*/
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+
+    font-size: 275%;
+}
+
+/*input[type="submit"] {
+    background-color: #3498db;
+    border:1px solid #3498db;
+    border-radius: 3px;
+    margin:5px 0 5px;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+}*/
+
+.submit{
+    width: 35%;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: block;
+    margin: 5px auto;
+    border: 0;
+    outline: none;
+    border-radius: 7px;
+    background: linear-gradient(to right, #92fe9d 0%, #3494E6 51%, #92fe9d 100%);
+    transition: .5s;
+    background-size: 200% auto;
+    color: white;
+}
+
+.submit:hover{
+    background-position: right center;
+}
+
+input[type="text"],input[type="email"],input[type="password"] {
+    border: 1px solid #d4d3d3;
+    margin-top: 5px;
+    width: 70%;
+    height:35px;
+    margin-bottom:10px;
+    padding-left:5px;
+}
+
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus {
+    border-color: #92fe9d;
+}
+
+input[type="text" ]:hover ,input[type="email" ]:hover, input[type="password" ]:hover {
+border-color: #00c9ff;
+}
+
+.gender-age-container{
+    width: 70%;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: 44px;
+}
+
+.gender{
+    position: relative;
+    float: unset;
+    width: auto;
+    height: 30px;
+    border: 1px solid #d4d3d3;
+}
+
+.gender:hover{
+    cursor: pointer;
+    border-color: #00c9ff;
+}
+
+.age{
+    position: relative;
+    width: auto;
+    float: right;
+    height: 30px;
+    border: 1px solid #d4d3d3;
+}
+
+.age:hover{
+    cursor: pointer;
+    border-color: #00c9ff;
+}
+
+.signup{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: auto;
+    height: auto;
+    margin:10px auto;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: lighter;
+    color: black;
+}
+
+.signup:hover{
+    color: blue;
+}
+
+#second {
+display:none;   
+}
+

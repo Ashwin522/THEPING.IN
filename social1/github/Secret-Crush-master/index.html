@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sign Up</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+	<div class="registration-page">
+		<div class="form">
+			<div class="slider">
+				<div id="sldr"></div>
+				<button type="button" class="toggle-sldr" onclick="signup()">Sign Up</button>
+				<button type="button" class="toggle-sldr" onclick="login()">Log In</button>
+			</div>
+			<form id="signup" class="register-form">
+				<input type="text" class="textbox" placeholder="FirstName">
+				<input type="text" class="textbox" placeholder="LastName">
+				<div class="container">
+					<div class="gndr">
+						<label class="drpdnlabel" for="gender">Gender</label>
+						<select id="gender" name="gender">
+							<option value="--select--">--select--</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</div>
+					<div class="agecls">
+						<label class="drpdnlabel" for="age">Age</label>
+						<select>
+							<?php
+						for ($i=1; $i<=100; $i++)
+						{
+							?>
+							<option value="<?php echo $i;?>"><?php echo $i;?></option>
+							<?php
+						}
+					?>
+						</select>
+					</div>
+				</div>
+				<input type="text" class="textbox" placeholder="Email">
+				<input type="password" class="textbox" placeholder="Password">
+				<input type="password" class="textbox" placeholder="ConfirmPassword">
+				<button type="button" class="submit"><span class="submit-btn">Sign Up</span></button>
+			</form>
+			<form id="login" class="register-form">
+				<input type="text" class="textbox" placeholder="Email">
+				<input type="password" class="textbox" placeholder="Password">
+				<button type="button" class="submit"><span class="submit-btn">Log In</span></button>
+			</form>
+		</div>
+	</div>
+	<script>
+		var x = document.getElementById("signup");
+		var y = document.getElementById("login");
+		var z = document.getElementById("sldr");
+
+		function login() {
+			x.style.left = "-350px";
+			y.style.left = "0px";
+			z.style.left = "110px";
+		}
+
+		function signup() {
+			x.style.left = "0px";
+			y.style.left = "350px";
+			z.style.left = "0px";
+		}
+	</script>
+</body>
+
+</html>
